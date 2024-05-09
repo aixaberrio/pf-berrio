@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.gotita-size {
+  width: 200px;
+  height: 200px;
+}
+
+.navbar {
+  background-color: #eddbc0 !important;
+  box-shadow: 10px 0px 10px #B73E3E !important;
+  position: sticky;
+  top: 0px !important;
+  height: 100px !important;
+}
+.navbar a img {
+  height: 120px;
+}
+.navbar form button {
+  background-color: #B73E3E !important;
+  color: #eddbc0 !important;
+  border: none !important;
+  box-shadow: 1px 1px 1px 1px black !important;
+}
+.navbar form .form-control {
+  margin: auto;
+}
+.navbar a:hover {
+  font-weight: bolder !important;
+  box-shadow: 10px 10px 10px #B73E3E !important;
+  border-radius: 2px !important;
+}
+
+.container-banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: space-between;
+  align-content: space-between;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: "text logo-completo";
+  box-shadow: 10px 0px 10px #B73E3E;
+}
+.container-banner .text {
+  grid-area: text;
+}
+.container-banner .logo-completo {
+  grid-area: logo-completo;
+}
+.container-banner div {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+.container-banner div img {
+  width: 300px;
+  height: 300px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  color: #eddbc0;
+  background-color: #B73E3E;
+  text-align: center;
+  font-size: 13px;
+}
+footer .menufooter ul {
+  padding-left: 0px !important;
+}
+footer .menufooter ul li {
+  list-style-type: none;
+}
+footer .menufooter ul li a {
+  text-decoration: none;
+  color: #eddbc0;
+}
+footer .bi {
+  color: #eddbc0 !important;
+  margin: 10px !important;
+}
+footer h6 {
+  font-weight: bolder;
+}
+
+.main-index .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: space-between;
+  align-content: space-between;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: "sangre donar donacion";
+  width: 100%;
+}
+.main-index .container .sangre {
+  grid-area: sangre;
+}
+.main-index .container .donar {
+  grid-area: donar;
+}
+.main-index .container .donacion {
+  grid-area: donacion;
+}
+.main-index .container .donacion li {
+  display: list-item;
+}
+
+.main-donantes .container-donantes {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: space-between;
+  align-content: space-between;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: "quienes" "cantidad" "vih" "debilitar";
+  margin: 5px;
+  height: 1000px;
+  text-align: center;
+}
+.main-donantes .container-donantes .quienes {
+  grid-area: quienes;
+}
+.main-donantes .container-donantes .cantidad {
+  grid-area: cantidad;
+}
+.main-donantes .container-donantes .vih {
+  grid-area: vih;
+}
+.main-donantes .container-donantes .debilitar {
+  grid-area: debilitar;
+}
+.main-donantes .requisitos {
+  display: flex;
+  text-align: center;
+  margin: 30px;
+  padding: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.main-donantes .requisitos button {
+  background-color: #B73E3E;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+.main-donantes .requisitos button a {
+  color: #eddbc0;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.main-donantes .requisitos button a:visited {
+  color: grey;
+}
+
+.main-pacientesamb .container-pacientesamb {
+  display: flex;
+  text-align: center;
+  margin: 100px;
+  margin-top: 10px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.main-pacientesamb .container-pacientesamb .turnos {
+  text-align: center;
+  align-items: center;
+  margin: 30px;
+  padding: 10px;
+  padding-top: 20px;
+  width: 300px;
+  height: 390px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.main-pacientesamb .container-pacientesamb .turnos input {
+  margin: 0.5px;
+}
+.main-pacientesamb ol {
+  padding: 20px;
+  margin: 10px;
+}
+
+.main-sucursales {
+  margin: 50px;
+}
+.main-sucursales .container-sucursales {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: space-between;
+  align-content: space-between;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: "mapa indicaciones";
+}
+.main-sucursales .container-sucursales .mapa {
+  grid-area: mapa;
+}
+.main-sucursales .container-sucursales .indicaciones {
+  grid-area: indicaciones;
+}
+.main-sucursales .container-sucursales .indicaciones li {
+  display: list-item;
+  padding: 10px;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+}
+
+.main-contactanos .container-contactanos {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.main-contactanos .container-contactanos .formulario {
+  text-align: center;
+  margin: 30px;
+  width: 400px;
+  height: 550px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.main-contactanos .container-contactanos .formulario h2 {
+  margin-top: 10px;
+}
+.main-contactanos .container-contactanos .formulario .enviar {
+  color: #eddbc0;
+  background-color: #B73E3E;
+  border-radius: 5px;
+  padding: 5px;
+}/*# sourceMappingURL=main.css.map */

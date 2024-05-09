@@ -1,0 +1,33 @@
+.navbar {
+    background-color: #eddbc0 !important;
+    box-shadow: 10px 0px 10px #B73E3E !important;
+    position: sticky;
+    top: 0px !important;
+    height: 100px !important;
+
+    a {
+        img {
+            height: 120px;
+        }
+    }
+
+    form {
+        button {
+            background-color: #B73E3E !important;
+            color: #eddbc0 !important;
+            border: none !important;
+            box-shadow: 1px 1px 1px 1px black !important;
+        }
+
+        .form-control {
+            margin: auto;
+        }
+    }
+
+    a:hover {
+        font-weight: bolder !important;
+        box-shadow: 10px 10px 10px #B73E3E !important;
+        border-radius: 2px !important;
+    }
+
+}

@@ -1,0 +1,16 @@
+//utilities
+@import './utilities/fonts';
+@import './utilities/reset';
+@import './utilities/colors';
+@import './utilities/components';
+//layout
+@import './layout/nav';
+@import './layout/header';
+@import './layout/footer';
+
+//pages
+@import './pages/index';
+@import './pages/donantes';
+@import './pages/pacientesambulatorios';
+@import './pages/sucursales';
+@import './pages/contactanos';

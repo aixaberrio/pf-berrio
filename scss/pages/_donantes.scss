@@ -1,0 +1,64 @@
+.main-donantes {
+    .container-donantes {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        justify-content: space-between;
+        align-content: space-between;
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:
+            "quienes"
+            "cantidad"
+            "vih"
+            "debilitar";
+        margin: 5px;
+        height: 1000px;
+        text-align: center;
+
+        .quienes {
+            grid-area: quienes;
+        }
+
+        .cantidad {
+            grid-area: cantidad;
+        }
+
+        .vih {
+            grid-area: vih;
+        }
+
+        .debilitar {
+            grid-area: debilitar;
+        }
+    }
+
+    .requisitos {
+        display: flex;
+        text-align: center;
+        margin: 30px;
+        padding: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        
+        button {
+            background-color: $rojo;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            
+            a {
+                color: $crema;
+                border-radius: 20px;
+                text-decoration: none;
+            }
+            a:visited {
+                color: grey;
+            }
+        }
+    }
+}

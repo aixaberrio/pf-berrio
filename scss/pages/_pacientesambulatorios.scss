@@ -1,0 +1,32 @@
+.main-pacientesamb {
+    .container-pacientesamb {
+        display: flex;
+        text-align: center;
+        margin: 100px;
+        margin-top: 10px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+        .turnos{
+            text-align: center;
+            align-items: center;
+            margin: 30px;
+            padding: 10px;
+            padding-top: 20px;
+            width: 300px;
+            height: 390px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+            input {
+                margin: 0.5px;
+            }
+        }
+    }
+    ol {
+        padding: 20px;
+        margin: 10px;
+    }
+}

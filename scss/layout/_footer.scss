@@ -1,0 +1,37 @@
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    color: $crema;
+    background-color: $rojo;
+    text-align: center;
+    font-size: 13px;
+
+
+    .menufooter {
+        ul {
+            padding-left: 0px !important;
+
+            li {
+                list-style-type: none;
+
+                a {
+                    text-decoration: none;
+                    color: $crema
+                }
+            }
+        }
+    }
+
+    .bi{
+        color: $crema !important;
+        margin: 10px !important;
+    }
+
+    h6 {
+        font-weight: bolder;
+    }
+}
