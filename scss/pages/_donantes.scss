@@ -44,18 +44,19 @@
         flex-wrap: wrap;
         justify-content: space-around;
 
-        
+
         button {
             background-color: $rojo;
             padding: 20px;
             margin: 20px;
             border-radius: 10px;
-            
+
             a {
                 color: $crema;
                 border-radius: 20px;
                 text-decoration: none;
             }
+
             a:visited {
                 color: grey;
             }

@@ -1,18 +1,23 @@
-.main-contactanos{
-    .container-contactanos
-    {display: flex;
+.main-contactanos {
+    .container-contactanos {
+        display: flex;
         flex-direction: column;
         align-content: center;
         justify-content: center;
         align-items: center;
-        .formulario{
+
+        .formulario {
             text-align: center;
             margin: 30px;
             width: 400px;
             height: 550px;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
-            h2 {margin-top: 10px;}
-            .enviar{
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+            h2 {
+                margin-top: 10px;
+            }
+
+            .enviar {
                 color: $crema;
                 background-color: $rojo;
                 border-radius: 5px;
@@ -20,5 +25,4 @@
             }
         }
     }
-    }
-    
+}

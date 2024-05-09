@@ -10,17 +10,22 @@
     align-items: center;
     grid-template-areas:
         "sangre donar donacion";
-        width: 100%;
-        .sangre {
-            grid-area: sangre;
+    width: 100%;
+
+    .sangre {
+        grid-area: sangre;
+    }
+
+    .donar {
+        grid-area: donar;
+    }
+
+    .donacion {
+        grid-area: donacion;
+
+        li {
+            display: list-item;
         }
-        
-        .donar {
-            grid-area: donar;
-        }
-        
-        .donacion {
-            grid-area: donacion;
-            li {display: list-item;}}
+    }
 
 }

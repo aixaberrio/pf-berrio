@@ -1,5 +1,6 @@
 .main-sucursales {
   margin: 50px;
+
   .container-sucursales {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -20,11 +21,12 @@
 
     .indicaciones {
       grid-area: indicaciones;
-      li{
+
+      li {
         display: list-item;
         padding: 10px;
-    font-family: $font2;
-    font-size: 20px;
+        font-family: $font2;
+        font-size: 20px;
       }
     }
   }
