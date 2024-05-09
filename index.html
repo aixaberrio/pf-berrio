@@ -7,6 +7,8 @@
     <title>Servicio de Medicina Transfusional</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -51,7 +53,9 @@
     <header class="container-banner">
         <div class="text">
             <h1>Servicio Privado de Medicina Transfusional Dra. Nelida Penayo</h1>
-            <h2>Celebramos 20 años de servicio <br> Donar sangre salva vidas <br> ¡Dona Hoy!</h2>
+            <h2>Celebramos 20 años de servicio</h2>
+            <h3 class="animate__animated animate__heartBeat animate__slow animate__infinite">Donar sangre salva vidas <br> ¡Dona Hoy!</h3>
+
         </div>
         <div class="logo-completo"><img src="./resources/logo-completo.png"
                 alt="logo servicio de medicina transfusional dra nelida penayo con mapa de misiones"
@@ -62,7 +66,7 @@
         <section class="container">
             <div class="sangre">
                 <img src="./resources/gotita-brazos-abajo.png" alt="gotita de sangre animada sonriente"
-                    class="gotita-size">
+                    class="gotita-size" data-aos="fade-left">
                 <h2>¿Qué es la donación de sangre?</h2><br>
                 <p>Es un acto altruista, solidario y desinteresado, en el cual una persona dona una cantidad mínima de
                     sangre
@@ -74,11 +78,11 @@
                 <p>Puede salvar la vida de varias personas y porque nuestro cuerpo es el unico organismo capaz de
                     producir este tejido humano</p>
                 <img src="./resources/gotita-brazos-izq.png" alt="gotita de sangre animada sonriente"
-                    class="gotita-size">
+                    class="gotita-size" data-aos="fade-up">
             </div>
             <div class="donacion">
                 <img src="./resources/gotita-curita.png" alt="gotita de sangre animada con una venda"
-                    class="gotita-size">
+                    class="gotita-size" data-aos="fade-left">
                 <h2>¿Quién se beneficia con la donación?</h2>
                 <p>Pacientes que padecen: <br>
                 <ul>
@@ -143,6 +147,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
