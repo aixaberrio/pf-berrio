@@ -35,3 +35,8 @@ footer {
         font-weight: bolder;
     }
 }
+
+//responsive
+@media (max-width:768px){.footer{
+    flex-direction: column;
+}}

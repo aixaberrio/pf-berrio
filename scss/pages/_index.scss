@@ -30,3 +30,14 @@
     }
 
 }
+// responsive
+@media (max-width:768px){
+    .main-index .container{
+        grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+        grid-template-areas:
+        "sangre"
+        "donacion" 
+        "donar";
+}}

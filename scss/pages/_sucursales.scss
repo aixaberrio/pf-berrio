@@ -31,3 +31,27 @@
     }
   }
 }
+//responsive
+@media(max-width:768px){.container-sucursales{
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  grid-template-areas:
+  "indicaciones"
+  "mapa" ;
+  max-width: 768px;
+  
+}}
+@media (max-width:768px){
+  .size-mapa{
+      height: 250px;
+      width: 190px;
+      
+  }
+}
+@media (max-width:768px){
+  .indicaciones{
+      width: 190px;
+      margin: 10px;
+  }
+}
