@@ -1,6 +1,6 @@
 .navbar {
-    background-color: #eddbc0 !important;
-    box-shadow: 10px 0px 10px #B73E3E !important;
+    background-color: $crema !important;
+    box-shadow: 10px 0px 10px $rojo !important;
     position: sticky;
     top: 0px !important;
     height: 100px !important;
@@ -13,7 +13,7 @@
 
     form {
         button {
-            background-color: #B73E3E !important;
+            background-color: $rojo !important;
             color: #eddbc0 !important;
             border: none !important;
             box-shadow: 1px 1px 1px 1px black !important;
@@ -31,16 +31,14 @@
     }
 
 }
-// responsive
-@media (max-width:768px){.size{
-    height: 120px;
-}}
-@media (max-width:768px){
-    .container-fluid{
-       background-color: #eddbc0 !important;
-       margin: 0px !important;
-       padding:0px !important;
-       box-shadow: 10px 0px 10px #B73E3E !important;
-   }
- 
+
+@media (max-width:768px) {
+    .container-fluid {
+        margin: 0px;
+background-color: #eddbc0;
+    }
+
+    .size {
+        height: 90px !important;
+    }
 }
