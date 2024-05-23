@@ -1,5 +1,4 @@
 .main-donantes {
-    
     .container-donantes {
         display: grid;
         grid-template-columns: 1fr;
@@ -18,21 +17,22 @@
         text-align: center;
 margin: 10px;
 padding: 10px;
-height: 1050px;
+height: min-content;
         .quienes {
             grid-area: quienes;
+            
         }
-
         .cantidad {
             grid-area: cantidad;
+            
         }
-
         .vih {
             grid-area: vih;
-        }
+            }
 
         .debilitar {
             grid-area: debilitar;
+            
         }
     }
 
@@ -64,8 +64,3 @@ height: 1050px;
         }
     }
 }
-
-//responsive
-@media(max-width:768px){.requisitos{margin: 50px;
-    padding: 50px;
-justify-content: center;}}

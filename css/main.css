@@ -187,7 +187,7 @@ footer h6 {
   text-align: center;
   margin: 10px;
   padding: 10px;
-  height: 1050px;
+  height: min-content;
 }
 .main-donantes .container-donantes .quienes {
   grid-area: quienes;
@@ -225,13 +225,6 @@ footer h6 {
   color: grey;
 }
 
-@media (max-width: 768px) {
-  .requisitos {
-    margin: 50px;
-    padding: 50px;
-    justify-content: center;
-  }
-}
 .main-pacientesamb {
   text-align: center;
 }
