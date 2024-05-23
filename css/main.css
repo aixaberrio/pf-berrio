@@ -18,7 +18,7 @@ h1 {
   height: 200px;
 }
 
-.shadow, .main-contactanos .container-contactanos .formulario, .main-pacientesamb .formulario .turnos, .main-donantes .requisitos, .container-banner, .navbar a:hover {
+.shadow, .main-contactanos .container-contactanos .formulario, .main-pacientesamb .formulario .turnos, .requisitos, .container-banner, .navbar a:hover {
   box-shadow: #B73E3E 0px 5px 20px;
   border-radius: 5px;
 }
@@ -175,33 +175,34 @@ footer h6 {
 }
 .main-donantes .container-donantes {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "quienes vih" "cantidad debilitar";
   justify-content: space-between;
   align-content: space-between;
   justify-items: center;
-  align-items: center;
-  grid-template-areas: "quienes" "cantidad" "vih" "debilitar";
+  align-items: start;
   text-align: center;
-  margin: 10px;
+  height: 500px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   padding: 10px;
-  height: min-content;
 }
-.main-donantes .container-donantes .quienes {
+.main-donantes .quienes {
   grid-area: quienes;
 }
-.main-donantes .container-donantes .cantidad {
+.main-donantes .cantidad {
   grid-area: cantidad;
 }
-.main-donantes .container-donantes .vih {
+.main-donantes .vih {
   grid-area: vih;
 }
-.main-donantes .container-donantes .debilitar {
+.main-donantes .debilitar {
   grid-area: debilitar;
 }
-.main-donantes .requisitos {
+
+.requisitos {
   display: flex;
   text-align: center;
   margin: 35px;
@@ -210,21 +211,30 @@ footer h6 {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.main-donantes .requisitos button {
+.requisitos button {
   background-color: #B73E3E;
   padding: 20px;
   margin: 20px;
   border-radius: 10px;
 }
-.main-donantes .requisitos button a {
+.requisitos button a {
   color: #eddbc0;
   border-radius: 20px;
   text-decoration: none;
 }
-.main-donantes .requisitos button a:visited {
+.requisitos button a:visited {
   color: grey;
 }
 
+@media (max-width: 768px) {
+  .main-donantes .container-donantes {
+    grid-template-columns: 1fr;
+    grid-auto-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "quienes" "cantidad" "vih" "debilitar";
+    height: 1100px;
+  }
+}
 .main-pacientesamb {
   text-align: center;
 }
