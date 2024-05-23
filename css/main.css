@@ -18,30 +18,35 @@ h1 {
   height: 200px;
 }
 
+.shadow, .main-contactanos .container-contactanos .formulario, .main-pacientesamb .formulario .turnos, .main-donantes .requisitos, .container-banner, .navbar a:hover {
+  box-shadow: #B73E3E 0px 5px 20px;
+  border-radius: 5px;
+}
+
 .navbar {
   background-color: #eddbc0 !important;
-  box-shadow: 10px 0px 10px #B73E3E !important;
   position: sticky;
-  top: 0px !important;
-  height: 100px !important;
+  top: 0px;
+  height: 100px;
   z-index: 1;
 }
 .navbar a img {
   height: 120px;
 }
 .navbar form button {
-  background-color: #B73E3E !important;
-  color: #eddbc0 !important;
-  border: none !important;
-  box-shadow: 1px 1px 1px 1px black !important;
+  background-color: #B73E3E;
+  color: #eddbc0;
+  border: none;
+  box-shadow: 1px 1px 1px 1px black;
+}
+.navbar form button:hover {
+  background-color: rgb(248, 142, 142);
 }
 .navbar form .form-control {
   margin: auto;
 }
 .navbar a:hover {
-  font-weight: bolder !important;
-  box-shadow: 10px 10px 10px #B73E3E !important;
-  border-radius: 2px !important;
+  font-weight: bolder;
 }
 
 @media (max-width: 768px) {
@@ -58,14 +63,12 @@ h1 {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-auto-columns: 1fr;
-  gap: 0px 0px;
   grid-auto-flow: row;
   justify-content: space-between;
   align-content: space-between;
   justify-items: center;
   align-items: center;
   grid-template-areas: "text logo-completo";
-  box-shadow: 10px 0px 10px #B73E3E;
 }
 .container-banner .text {
   grid-area: text;
@@ -105,7 +108,7 @@ footer {
   font-size: 13px;
 }
 footer .menufooter ul {
-  padding-left: 0px !important;
+  padding-left: 0px;
 }
 footer .menufooter ul li {
   list-style-type: none;
@@ -115,8 +118,17 @@ footer .menufooter ul li a {
   color: #eddbc0;
 }
 footer .bi {
-  color: #eddbc0 !important;
-  margin: 10px !important;
+  color: #eddbc0;
+  margin: 10px;
+}
+footer .bi-twitter:hover {
+  color: #1DA1F2;
+}
+footer .bi-instagram:hover {
+  color: rgb(188, 12, 241);
+}
+footer .bi-facebook:hover {
+  color: #4267B2;
 }
 footer h6 {
   font-weight: bolder;
@@ -172,9 +184,10 @@ footer h6 {
   justify-items: center;
   align-items: center;
   grid-template-areas: "quienes" "cantidad" "vih" "debilitar";
-  margin: 5px;
-  height: 1000px;
   text-align: center;
+  margin: 10px;
+  padding: 10px;
+  height: 1050px;
 }
 .main-donantes .container-donantes .quienes {
   grid-area: quienes;
@@ -191,7 +204,7 @@ footer h6 {
 .main-donantes .requisitos {
   display: flex;
   text-align: center;
-  margin: 30px;
+  margin: 35px;
   padding: 10px;
   flex-direction: row;
   flex-wrap: wrap;
@@ -258,7 +271,6 @@ footer h6 {
   padding-top: 20px;
   width: 300px;
   height: 390px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .main-pacientesamb .formulario .turnos input {
   margin: 0.5px;
@@ -346,7 +358,6 @@ footer h6 {
   margin: 30px;
   width: 400px;
   height: 550px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .main-contactanos .container-contactanos .formulario h2 {
   margin-top: 10px;

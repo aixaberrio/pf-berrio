@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-auto-columns: 1fr;
-  gap: 0px 0px;
+  
   grid-auto-flow: row;
   justify-content: space-between;
   align-content: space-between;
@@ -11,7 +11,7 @@
   align-items: center;
   grid-template-areas:
     "text logo-completo";
-  box-shadow: 10px 0px 10px #B73E3E;
+  @extend .shadow;
 
   .text {
     grid-area: text;

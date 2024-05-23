@@ -13,7 +13,7 @@ footer {
 
     .menufooter {
         ul {
-            padding-left: 0px !important;
+            padding-left: 0px;
 
             li {
                 list-style-type: none;
@@ -26,17 +26,38 @@ footer {
         }
     }
 
-    .bi{
-        color: $crema !important;
-        margin: 10px !important;
+    .bi {
+        color: $crema ;
+        margin: 10px;
     }
 
+    .bi-twitter {
+        &:hover {
+            color: #1DA1F2;
+        }
+    }
+
+    .bi-instagram {
+        &:hover { color: rgb(188, 12, 241);
+
+        }
+    }
+    .bi-facebook {
+        &:hover { color: #4267B2;
+        }
+    }
+    
     h6 {
         font-weight: bolder;
     }
+
 }
 
+
+
 //responsive
-@media (max-width:768px){.footer{
-    flex-direction: column;
-}}
+@media (max-width:768px) {
+    .footer {
+        flex-direction: column;
+    }
+}
