@@ -47,6 +47,7 @@ h1 {
 }
 .navbar a:hover {
   font-weight: bolder;
+  background-color: #eddbc0;
 }
 
 @media (max-width: 768px) {
