@@ -1,12 +1,17 @@
 .main-pacientesamb {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
     text-align: center;
-
     .container-pacientesamb {
         display: grid;
         grid-auto-columns: 1fr;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        gap: 0px 0px;
+        gap: 0px 40px;
         grid-template-areas:
             "transfusiones sangre";
         justify-content: space-between;
@@ -33,11 +38,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        margin:10px;
 
         .turnos {
             text-align: center;
-            align-items: center;
-            justify-content: center;
             margin: 30px;
             padding: 10px;
             padding-top: 20px;
@@ -55,21 +60,35 @@
 @media (max-width:768px) {
     .main-pacientesamb .container-pacientesamb {
         grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-auto-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-auto-columns: 1fr;
         grid-template-areas:
             "transfusiones"
-              "sangre";
+            "sangre";
         margin: 10px;
         padding: 10px;
-        .transfusiones{width: 350px;}
-        .sangre{width: 350px;}
 
-    }
-    
-    @media (max-width:768px){
-        .main-pacientesamb .formulario{
+        .transfusiones {
             width: 350px;
         }
+
+        .sangre {
+            width: 350px;
+        }
+
+    }
+}
+
+@media (max-width:375px) {
+    .main-pacientesamb .container-pacientesamb {
+        
+        .sangre {
+            width: 290px;
+            margin-right: 10px;
+        }
+        .transfusiones{width: 290px;
+            margin-right: 10px;}
+    }
+    .main-pacientesamb .formulario .turnos{width: 250px;
     }
 }

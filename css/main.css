@@ -236,6 +236,12 @@ footer h6 {
   }
 }
 .main-pacientesamb {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
   text-align: center;
 }
 .main-pacientesamb .container-pacientesamb {
@@ -243,7 +249,7 @@ footer h6 {
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  gap: 0px 0px;
+  gap: 0px 40px;
   grid-template-areas: "transfusiones sangre";
   justify-content: space-between;
   align-content: space-between;
@@ -264,11 +270,11 @@ footer h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  margin: 10px;
 }
 .main-pacientesamb .formulario .turnos {
   text-align: center;
-  align-items: center;
-  justify-content: center;
   margin: 30px;
   padding: 10px;
   padding-top: 20px;
@@ -295,9 +301,17 @@ footer h6 {
     width: 350px;
   }
 }
-@media (max-width: 768px) and (max-width: 768px) {
-  .main-pacientesamb .formulario {
-    width: 350px;
+@media (max-width: 375px) {
+  .main-pacientesamb .container-pacientesamb .sangre {
+    width: 290px;
+    margin-right: 10px;
+  }
+  .main-pacientesamb .container-pacientesamb .transfusiones {
+    width: 290px;
+    margin-right: 10px;
+  }
+  .main-pacientesamb .formulario .turnos {
+    width: 250px;
   }
 }
 .main-sucursales {
