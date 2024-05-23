@@ -24,6 +24,7 @@ h1 {
   position: sticky;
   top: 0px !important;
   height: 100px !important;
+  z-index: 1;
 }
 .navbar a img {
   height: 120px;
