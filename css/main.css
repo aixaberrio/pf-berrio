@@ -165,6 +165,33 @@ footer h6 {
 .main-index .container .donacion li {
   display: list-item;
 }
+.main-index .plantilla {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  text-align: center;
+  padding-top: 20px;
+}
+.main-index .plantilla img {
+  height: 500px;
+}
+.main-index .plantilla button {
+  background-color: #B73E3E;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+.main-index .plantilla button a {
+  color: #eddbc0;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.main-index .plantilla button a:visited {
+  color: grey;
+}
 
 @media (max-width: 768px) {
   .main-index .container {
